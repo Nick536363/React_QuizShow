@@ -1,7 +1,11 @@
 function Game(){
+    const progress_style = {
+            width: '50%',
+            backgroundColor: 'white'
+        }
     return(
         <div className="Game">
-
+        <div className="progress" style={progress_style}>Линия прогресса</div>
         <h1>Что такое useState?</h1>
 
         <ul>
