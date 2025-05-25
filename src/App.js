@@ -4,6 +4,9 @@ import Game from './Game';
 
 function App() {
   const [index, SetIndex] = useState(0)
+  function onClickVariant(variant_index){
+          SetIndex(index+1)
+  }
   const questions = [
       {
         title: 'React - это ... ?',
@@ -25,12 +28,16 @@ function App() {
         correct: 2,
     },
     ];
-
-  return (
+  if(index !== questions.length){
+    return (
     <div className='App'>
-      <Game question = {questions[index]}  />
+      <Game question = {questions[index]} index = {index} onClickVariant = {onClickVariant} />
     </div>
-  );
+    );
+  }
+  else{
+    return(<div className='App'></div>)
+  }
 }
 
 export default App;
