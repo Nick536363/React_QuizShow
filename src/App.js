@@ -6,7 +6,11 @@ import Result from './Result';
 
 function App() {
   const [index, SetIndex] = useState(0)
+  const [correct, SetCorrect] = useState(0)
   function onClickVariant(variant_index){
+    if(variant_index === questions[index]["correct"]){
+      SetCorrect(correct+1)
+    }
           SetIndex(index+1)
   }
   const questions = [
@@ -38,7 +42,7 @@ function App() {
     );
   }
   else{
-    return(<div className='App'><Result/></div>)
+    return(<div className='App'><Result correct = {correct} all = {questions.length} /></div>)
   }
 }
 
