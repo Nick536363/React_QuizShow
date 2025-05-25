@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Game from './Game';
+import Result from './Result';
+
 
 function App() {
   const [index, SetIndex] = useState(0)
@@ -36,7 +38,7 @@ function App() {
     );
   }
   else{
-    return(<div className='App'></div>)
+    return(<div className='App'><Result/></div>)
   }
 }
 
