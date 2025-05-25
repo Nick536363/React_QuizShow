@@ -37,7 +37,7 @@ function App() {
   if(index !== questions.length){
     return (
     <div className='App'>
-      <Game question = {questions[index]} index = {index} onClickVariant = {onClickVariant} />
+      <Game question = {questions[index]} index = {index} all = {questions.length} onClickVariant = {onClickVariant} />
     </div>
     );
   }

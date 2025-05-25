@@ -1,10 +1,13 @@
 import './Game.css'
 
 function Game(props){
-
+    var percentage = Math.round((props.index / props.all) * 100)
+     const progress_style = {
+            width: percentage+"%"
+        }
     return(
         <div className="Game">
-        <div className="progress"></div>
+        <div className="progress" style={progress_style}></div>
         <h1>{props.question["title"]}</h1>
 
         <ul>
