@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import './App.css';
 import Game from './Game';
 
 function App() {
+  const [index, SetIndex] = useState(0)
   const questions = [
       {
         title: 'React - это ... ?',
@@ -23,9 +25,10 @@ function App() {
         correct: 2,
     },
     ];
+
   return (
     <div className='App'>
-      <Game/>
+      <Game question = {questions[index]}  />
     </div>
   );
 }
