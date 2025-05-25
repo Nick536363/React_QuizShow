@@ -48,3 +48,28 @@ body { margin: 0; font-family: ‘Nunito’, sans-serif; -webkit-font-smoothing:
     border: 2px solid rgba(0, 0, 0, 0.3);
 background-color: #31ec31;
 }
+
+.App .result {
+    text-align: center;
+}
+
+.App .result button {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 30px;
+    border: 0;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff006e;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.App .result h2 {
+    margin-bottom: 0;
+}
+
+.App .result img {
+    width: 150px;
+}
