@@ -1,6 +1,17 @@
 function Game(){
     return(
-        <h1>Hello Game</h1>
+        <div className="Game">
+
+        <h1>Что такое useState?</h1>
+
+        <ul>
+            <li>Это функция для хранения данных компонента.</li>
+            <li>Это глобальный стейт</li>
+            <li>Это когда включешь компьютер</li>
+        </ul>
+
+        </div>
+        
     )
 }
 
